@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Salut ! Salut !!</h1>
+
+    <img src="{{ asset('Images/flags-pirates_1.png') }}" alt="Drapeau" width="200" height="150">
+
+    <h1 class="mt—5 text—3xl Ism: text—5xl font—semibold text—indigo-600"> Salut ! Salut !!</h1>
 
     <p>Il est présentement {{ 'now' | date('H:i A') }}.</p>
 
-    <footer>
-        <p>&copy; CopyRight {{ 'now' | date('Y') }}. &middot; <a href="">About us </a></p>
-    </footer>
 {% endblock %}

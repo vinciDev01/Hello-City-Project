@@ -15,4 +15,13 @@ class PagesController extends AbstractController
             'pages/home.html.twig',
         );
     }
+
+    #[Route('/About-us', name: 'app_about')]
+    public function about(): Response
+    {
+        return $this->render(
+            'pages/about.html.twig',
+        );
+    }
+
 }
